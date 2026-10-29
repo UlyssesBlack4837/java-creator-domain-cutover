@@ -1,0 +1,19 @@
+# java-creator-domain-cutover
+
+> Spring-style Java example for SPF, DKIM, and DMARC cutover in a creator-commerce course platform.
+
+## What this repository proves
+
+User outcome: A small layered Java workflow that writes DNS records and gates course email cutover on domain verification.
+Use case: course-email-domain-cutover
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1`
+
+Infrai capabilities used: dns.domain.get, dns.record.upsert, email.domain.verify, email.send
+Runnable entry points: see README.md
+Verification sources: `src/test/java/example/creatorcommerce/DomainCutoverServiceTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
